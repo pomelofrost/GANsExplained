@@ -81,7 +81,7 @@ h2{
     color:white;
     text-align:center;
     line-height:1.5;
-    /* padding-bottom:2em; */
+    padding-bottom:2em;
 }
 
 h3{
@@ -178,9 +178,10 @@ svg{
     background-color:#9B9B9B;
     position:relative;
     top:-100px;
+    padding-bottom:0px;
 }
 
 /* section4 */
-.grey{
-    background-color:#9B9B9B;
+.section4 img{
+    width:100%
 }
