@@ -77,11 +77,11 @@ h1{
 }
 h2{
     font-family: 'press_start_2pregular';
-    font-size:1.5em;
+    font-size:1.2em;
     color:white;
     text-align:center;
     line-height:1.5;
-    padding-bottom:2em;
+    /* padding-bottom:2em; */
 }
 
 h3{
@@ -103,8 +103,8 @@ p{
 
 /* splash */
 .splash{
-    margin-top:300px;
-    margin-bottom:300px;
+    margin-top:200px;
+    margin-bottom:200px;
     margin-left:50px;
     margin-right:50px;
 }
@@ -127,10 +127,10 @@ p{
 }
 
 /* sections */
-.section1,.section2{
+.section1,.section2,.section3{
     margin:50px;
 }
-
+/* section1 */
 .machine{
     display: block;
     margin-left: auto;
@@ -141,6 +141,8 @@ p{
 div div{
     padding-bottom:50px;
 }
+
+/* section 2 */
 
 span{
     display:flex;
@@ -169,4 +171,11 @@ svg{
     display:block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* section3 */
+.onTop{
+    background-color:#9B9B9B;
+    position:relative;
+    top:-100px;
 }
