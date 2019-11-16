@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>GANs Expained</title>
+    <script>
+        //     $(document).ready(function(){
+        
+        //         var wrap = $("#scrollable");
+        //         wrap.on("scroll", function(e) {
+        //             console.log("hi")
+        //         if (this.scrollTop > 147) {
+        //         wrap.addClass("fix-img");
+        //         } else {
+        //         wrap.removeClass("fix-img");
+        //         }
+        //         console.log("h")
+        // });
+          
+        // });
+    </script>
+</head>
+<body>
+    <img src="img/3D_person.png" alt="" id="rightImg">
+    <img src="img/3D_person_flipped.png" alt="" id="leftImg">
+    <div class="splash">
+        <h1>HOW ARE FAKE FACES CREATED?</h1>
+        <h3>Understand the AI algorithm behind AI INVADERS AND AI DEFENDERS</h3>
+
+    </div>
+    <div class="section1">
+        <div><h2>AI INVADER</h2>
+            <img src="img/ai_invader.png" alt="" class="machine">
+            <p>Allows users to create AI-Generated faces based on real images by modifying 4 different parameters.</p>
+        </div>
+        <div><h2>AI DEFENDER</h2>
+            <img src="img/ai_defender.png" alt="" class="machine">
+            <p>Challenges users to distinguish fake faces from real faces.</p></div>
+    </div>
+    <div class="section2">
+        <h3>Random noise</h3>
+        <svg height="110" width="50">
+                <line x1="25" y1="0" x2="25" y2="100" style="stroke:white;stroke-width:3" />
+                <line x1="25" y1="100" x2="50" y2="75" style="stroke:white;stroke-width:3" />
+                <line x1="25" y1="100" x2="0" y2="75" style="stroke:white;stroke-width:3" />
+        </svg>
+        <img src="img/ai_invader.png" alt="" class="machine">
+        <span>
+            <p>Newly generated faces passing onto the game</p>
+            <svg height="210" width="50">
+                    <line x1="25" y1="0" x2="25" y2="200" style="stroke:white;stroke-width:3" />
+                    <line x1="25" y1="200" x2="50" y2="175" style="stroke:white;stroke-width:3" />
+                    <line x1="25" y1="200" x2="0" y2="175" style="stroke:white;stroke-width:3" />
+            </svg>
+            <img src="img/fake.png" alt="" id="fakeFace">
+        </span>
+        <img src="img/ai_defender.png" alt="" class="machine">
+        <svg height="110" width="50">
+                <line x1="25" y1="0" x2="25" y2="100" style="stroke:white;stroke-width:3" />
+                <line x1="25" y1="0" x2="50" y2="25" style="stroke:white;stroke-width:3" />
+                <line x1="25" y1="0" x2="0" y2="25" style="stroke:white;stroke-width:3" />
+        </svg>
+        <h3>Real photos</h3>
+        <img src="img/real.png" alt="" id="realFace">
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* CUSTOM CSS */
+@font-face {
+    font-family: 'press_start_2pregular';
+    src: url('pressstart2p-webfont.woff2') format('woff2'),
+         url('pressstart2p-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'space_groteskregular';
+    src: url('spacegrotesk-regular-webfont.woff2') format('woff2'),
+         url('spacegrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+    background-color:black;
+}
+h1{
+    font-family: 'press_start_2pregular';
+    font-size:2em;
+    color:white;
+    text-align:center;
+    line-height:1.5;
+}
+h2{
+    font-family: 'press_start_2pregular';
+    font-size:1.5em;
+    color:white;
+    text-align:center;
+    line-height:1.5;
+    padding-bottom:2em;
+}
+
+h3{
+    font-family:'space_groteskregular';
+    color:white;
+    font-size:1.5em;
+    text-align:center;
+    line-height:1.5;
+}
+
+p{
+    font-family:'space_groteskregular';
+    color:white;
+    font-size:1.2em;
+    padding-top:1em;
+    padding-bottom:1em;
+    line-height:1.4;
+}
+
+/* splash */
+.splash{
+    margin-top:300px;
+    margin-bottom:300px;
+    margin-left:50px;
+    margin-right:50px;
+}
+
+#rightImg{
+    top:0px;
+    position:absolute;
+    z-index:-100;
+    width:40%;
+    height:auto;
+    right:0px;
+}
+
+#leftImg{
+    position:absolute;
+    z-index:-100;
+    width:40%;
+    height:auto;
+    top:400px;
+}
+
+/* sections */
+.section1,.section2{
+    margin:50px;
+}
+
+.machine{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width:50%;
+}
+
+div div{
+    padding-bottom:50px;
+}
+
+span{
+    display:flex;
+    justify-content:center;
+    margin:25px;
+    align-items:center;
+}
+span p{
+    width:40%;
+}
+
+#fakeFace{
+    width:30%;
+    height:40%;
+}
+
+#realFace{
+    display:block;
+    width:30%;
+    height:40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+svg{
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+}
