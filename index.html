@@ -9,6 +9,7 @@
 
 </head>
 <body>
+    
     <img src="img/3D_person.png" alt="" id="rightImg">
     <img src="img/3D_person_flipped.png" alt="" id="leftImg">
     <div class="splash">
@@ -16,13 +17,18 @@
         <h3>Understand the algorithm behind AI INVADERS AND AI DEFENDERS</h3>
 
     </div>
+    <div id="scrollable">
+        <img src="img/ai_invader.png" alt="" class="machine">
+        <img src="img/ai_defender.png" alt="" class="machine">
+    </div>
+    
     <div class="section1">
         <div><h2>AI INVADER</h2>
-            <img src="img/ai_invader.png" alt="" class="machine">
+            <span></span>
             <p>Allows users to create AI-Generated faces based on real images by modifying 4 different parameters.</p>
         </div>
         <div><h2>AI DEFENDER</h2>
-            <img src="img/ai_defender.png" alt="" class="machine" id="defender">
+            <span></span>
             <p>Challenges users to distinguish fake faces from real faces.</p></div>
     </div>
     <div class="section2">
@@ -32,7 +38,7 @@
                 <line x1="25" y1="100" x2="50" y2="75" style="stroke:white;stroke-width:3" />
                 <line x1="25" y1="100" x2="0" y2="75" style="stroke:white;stroke-width:3" />
         </svg>
-        <img src="img/ai_invader.png" alt="" class="machine" id="invader">
+        <span></span>
         <span>
             <p>Newly generated faces passing onto the game</p>
             <svg height="210" width="50">
@@ -42,7 +48,7 @@
             </svg>
             <img src="img/fake.png" alt="" id="fakeFace">
         </span>
-        <img src="img/ai_defender.png" alt="" class="machine">
+        <span></span>
         <svg height="110" width="50">
                 <line x1="25" y1="0" x2="25" y2="100" style="stroke:white;stroke-width:3" />
                 <line x1="25" y1="0" x2="50" y2="25" style="stroke:white;stroke-width:3" />
@@ -53,10 +59,10 @@
     </div>
     <div class="section3">
         <h2>In a GANs Model,</h2>
-        <img src="img/ai_invader.png" alt="" class="machine">
+        <span></span>
         <h2 class="onTop">CREATOR</h2>
         <p>AI INVADER acts like a creator, which generates new content, and AI DEFENDER acts like a descriminator. New content is constently passing onto the discriminator along with real training data (ground truth) to be assessed. </p>
-        <img src="img/ai_defender.png" alt="" class="machine">
+        <span></span>
         <h2 class="onTop">DISCRIMINATOR</h2>
     </div>
     <div class="section4">
@@ -64,21 +70,15 @@
         <img src="img/diagram.png" alt="">
     </div>
     <script>
-       // When the user scrolls the page, execute myFunction
         window.onscroll = function() {myFunction()};
-
-        // Get the header
-        var defender = document.getElementById("defender");
-
-        // Get the offset position of the navbar
-        var sticky = defender.offsetTop;
-
-        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        var images = document.getElementById("scrollable");
+        // Get the offset position
+        var threshold = images.offsetTop;
         function myFunction() {
-        if (window.pageYOffset > sticky-300) {
-            defender.classList.add("sticky");
+        if (window.pageYOffset > threshold-300) {
+            images.classList.add("sticky");
         } else {
-            defender.classList.remove("sticky");
+            images.classList.remove("sticky");
         }
         }    
     </script>
