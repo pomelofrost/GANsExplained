@@ -127,7 +127,7 @@ p{
 }
 
 /* sections */
-.section1,.section2,.section3{
+.section1,.section2,.section3,.section4{
     margin:50px;
 }
 /* section1 */
@@ -178,4 +178,9 @@ svg{
     background-color:#9B9B9B;
     position:relative;
     top:-100px;
+}
+
+/* section4 */
+.grey{
+    background-color:#9B9B9B;
 }
