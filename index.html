@@ -5,24 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css" type="text/css" charset="utf-8" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <title>GANs Expained</title>
-    <script>
-        //     $(document).ready(function(){
-        
-        //         var wrap = $("#scrollable");
-        //         wrap.on("scroll", function(e) {
-        //             console.log("hi")
-        //         if (this.scrollTop > 147) {
-        //         wrap.addClass("fix-img");
-        //         } else {
-        //         wrap.removeClass("fix-img");
-        //         }
-        //         console.log("h")
-        // });
-          
-        // });
-    </script>
+
 </head>
 <body>
     <img src="img/3D_person.png" alt="" id="rightImg">
@@ -38,7 +22,7 @@
             <p>Allows users to create AI-Generated faces based on real images by modifying 4 different parameters.</p>
         </div>
         <div><h2>AI DEFENDER</h2>
-            <img src="img/ai_defender.png" alt="" class="machine">
+            <img src="img/ai_defender.png" alt="" class="machine" id="defender">
             <p>Challenges users to distinguish fake faces from real faces.</p></div>
     </div>
     <div class="section2">
@@ -48,7 +32,7 @@
                 <line x1="25" y1="100" x2="50" y2="75" style="stroke:white;stroke-width:3" />
                 <line x1="25" y1="100" x2="0" y2="75" style="stroke:white;stroke-width:3" />
         </svg>
-        <img src="img/ai_invader.png" alt="" class="machine">
+        <img src="img/ai_invader.png" alt="" class="machine" id="invader">
         <span>
             <p>Newly generated faces passing onto the game</p>
             <svg height="210" width="50">
@@ -79,6 +63,25 @@
         <h2>GANs Algorithm</h2>
         <img src="img/diagram.png" alt="">
     </div>
+    <script>
+       // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var defender = document.getElementById("defender");
+
+        // Get the offset position of the navbar
+        var sticky = defender.offsetTop;
+
+        // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+        function myFunction() {
+        if (window.pageYOffset > sticky-300) {
+            defender.classList.add("sticky");
+        } else {
+            defender.classList.remove("sticky");
+        }
+        }    
+    </script>
 </body>
 
 </html>
