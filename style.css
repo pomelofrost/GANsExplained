@@ -288,3 +288,7 @@ svg{
     padding-right:100px;
 }
 }
+
+.emphasize{
+    border:1px yellow solid
+}
